@@ -19,17 +19,17 @@ int main(void)
 	if (n % 10 > 5)
 	{
 		printf("%s%d%s%d%s\n", "Last digit of ", n, " is ", n%10,
-		"and is greater than 5");
+		" and is greater than 5");
 	}
 	if (n % 10 == 0)
 	{
 		printf("%s%d%s%d%s\n", "Last digit of ", n, " is ", n%10, 
-				"and is 0");
+				" and is 0");
 	}
 	if (n % 10 > 0 && n % 10 < 5) 
 	{
 		printf("%s%d%s%d%s\n", "Last digit of ", n, " is ", n%10,
-				"and is 0");
+				" and is 0");
 	}
 	return (0);
 }
