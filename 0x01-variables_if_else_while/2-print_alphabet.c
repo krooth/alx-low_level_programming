@@ -15,9 +15,9 @@ int main(void)
 	while (alphabet_char < 123)
 	{
 		putchar(alphabet_char);
-		putchar("\n");
 		alphabet_char++;
 	}
+	putchar('\n');
 
 	return (0);
 }
