@@ -16,6 +16,7 @@ int main(void)
 	{
 		if (alphabet_char == 101 || alphabet_char == 113)
 		{
+			alphabet_char++;
 			continue;
 		}
 		putchar(alphabet_char);
