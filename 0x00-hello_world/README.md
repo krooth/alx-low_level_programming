@@ -6,3 +6,5 @@ This is part of low-level programming with C programming language.
 4-puts.c: is c program that outputs a text  using "puts" function.
 5-prinf.c: is c program that ouputs a text using the printf function.
 6-size.c: is c program that outputs the size of type on the computer.
+100-intel is c program that outputs assembly code in intel syntax.
+101-qoute.c is c program that prints a string to stderr of the OS.
