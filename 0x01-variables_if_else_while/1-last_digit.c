@@ -26,10 +26,10 @@ int main(void)
 		printf("%s%d%s%d%s\n", "Last digit of ", n, " is ", n%10, 
 				" and is 0");
 	}
-	if (n % 10 > 0 && n % 10 < 5) 
+	if (n % 10 < 6) 
 	{
 		printf("%s%d%s%d%s\n", "Last digit of ", n, " is ", n%10,
-				" and is 0");
+				" and is less than 6 and not 0");
 	}
 	return (0);
 }
