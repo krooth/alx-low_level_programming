@@ -18,7 +18,7 @@ int main(void)
 				num++;
 		}
 		num = 97;
-		while (num < 114)
+		while (num < 103)
 		{
 				putchar(num);
 				num++;
