@@ -4,4 +4,6 @@ This is part two of the low-level programming with C
 2-print_alphabet.c: prints alphabet in lowercase.
 3-print_aphabets.c: prints alphabets in lowercase and uppercase.
 4-print_alphabt.c: prints lowercase alpahbets excluding q and e.
-5-print_numbers.c: prints number from 0 to 9
+5-print_numbers.c: prints number from 0 to 9.
+6-print_nuberz.c: prints number from 0 to 9 using putchar function.
+7-print_tebahpla.c: prints lowercase alphabet in reverse order.
