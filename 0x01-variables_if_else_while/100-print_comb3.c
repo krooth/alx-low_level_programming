@@ -10,7 +10,7 @@
 int main(void)
 {
     int a = 0, b = 0;
-    while (a < 10) 
+    while (a < 10)
     {
         while (b < 10)
         {
@@ -29,6 +29,6 @@ int main(void)
         b = 0;
         a++;
     }
-    putchar('\n');
-    return (0);
+        putchar('\n');
+        return (0);
 }
