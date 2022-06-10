@@ -14,14 +14,14 @@ int main(void)
 
 		while (num < 58)
 		{
-				putchar(num);
-				num++;
+			putchar(num);
+			num++;
 		}
 		num = 97;
 		while (num < 103)
 		{
-				putchar(num);
-				num++;
+			putchar(num);
+			num++;
 		}
 		putchar('\n');
 		return (0);
