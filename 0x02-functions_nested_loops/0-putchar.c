@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 
 /**
@@ -10,7 +10,17 @@
 
 int main(void)
 {
-	printf("%s\n", "_putchar");
+   char str[] = "_putchar";
+   int i = 8;
+
+   while (i < 8)
+   {
+      _putchar(str[i]);
+      i++;
+
+   }
+   _putchar('\n');
 
 	return (0);
 }
+
