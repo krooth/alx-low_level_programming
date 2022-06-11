@@ -2,7 +2,7 @@
 
 /**
 	* print_alphabet_x10 - print alphabet function
-	* void - no parameter for print_alphabet_x10
+	* void - no parameter for print_alphabet_x10`
 	*
 	* Return: returns 0 when program finishes excution
 	*/
@@ -21,5 +21,6 @@ void print_alphabet_x10(void)
 			letter++;
 		}
 		_putchar('\n');
+		times++;
 	}
 }
