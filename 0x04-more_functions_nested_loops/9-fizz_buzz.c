@@ -15,7 +15,18 @@ void print_fizz_buzz(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0)
+		if ((i % 3 == 0) && (i % 5 == 0))
+		{
+			for (j = 0; j < 5; j++)
+			{
+				_putchar(fizz[j]);
+			}
+			for (k = 0; k < 5; k++)
+			{
+				_putchar(buzz[k]);
+			}
+		}
+		else if (i % 3 == 0)
 		{
 			for (j = 0; j < 5; j++)
 			{
