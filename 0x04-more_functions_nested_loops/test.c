@@ -7,7 +7,6 @@
  */
 int main(void)
 {
-	print_diagonal(5);
-	print_square(0);
+	print_fizz_buzz();
 	return (0);
 }

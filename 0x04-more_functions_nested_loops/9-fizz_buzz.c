@@ -10,42 +10,34 @@
 void print_fizz_buzz(void)
 {
 	int i, j, k;
-	char fizz[5] = 'Fizz';
-	char buzz[5] = 'Buzz';
+	char fizz[5] = "Fizz";
+	char buzz[5] = "Buzz";
 
 	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0)
 		{
-			for (j = 0; j < 6; j++)
+			for (j = 0; j < 5; j++)
 			{
 				_putchar(fizz[j]);
 			}
 		}
 		else if (i % 5 == 0)
 		{
-			for (k = 0; k < 6; k++)
+			for (k = 0; k < 5; k++)
 			{
 				_putchar(buzz[k]);
 			}
 		}
 		else
 		{
-			_putchar('0' + i);
+			if (i > 10)
+			{
+			_putchar('0' + i / 10);
+			}
+			_putchar('0' + i % 10);
 		}
+		_putchar(' ');
 	}
 	_putchar('\n');
-}
-
-
-/**
-	* main - starting point of program
-	* void: no parameter
-	*
-	* Return: returns integer 0 when excution is over
-	*/
-
-int main(void)
-{
-	print_fizz_buzz();
 }
