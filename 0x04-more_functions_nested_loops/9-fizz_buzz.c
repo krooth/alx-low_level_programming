@@ -36,3 +36,16 @@ void print_fizz_buzz(void)
 	}
 	_putchar('\n');
 }
+
+
+/**
+	* main - starting point of program
+	* void: no parameter
+	*
+	* Return: returns integer 0 when excution is over
+	*/
+
+int main(void)
+{
+	print_fizz_buzz();
+}
