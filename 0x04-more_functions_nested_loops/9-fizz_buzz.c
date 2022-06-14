@@ -48,7 +48,6 @@ void print_fizz_buzz(void)
 			}
 			_putchar('0' + i % 10);
 		}
-		_putchar(' ');
 	}
 	_putchar('\n');
 }
