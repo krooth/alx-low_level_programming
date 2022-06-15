@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	print_fizz_buzz();
+	print_fizz_buzz(100);
 	return (0);
 }

@@ -1,53 +1,42 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
-	* print_fizz_buzz - prints fizz or buzz for multiples of 3 and 4
+	* main - entry point of program
 	* void: no parameter
 	*
-	* Return: void returning function(none)
+	* Return: int returning funciton
 	*/
 
-void print_fizz_buzz(void)
+int main(void)
 {
-	int i, j, k;
-	char fizz[5] = "Fizz";
-	char buzz[5] = "Buzz";
+	int i;
 
 	for (i = 1; i <= 100; i++)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
 		{
-			for (j = 0; j < 5; j++)
-			{
-				_putchar(fizz[j]);
-			}
-			for (k = 0; k < 5; k++)
-			{
-				_putchar(buzz[k]);
-			}
+			printf("FizzBuzz");
 		}
 		else if (i % 3 == 0)
 		{
-			for (j = 0; j < 5; j++)
-			{
-				_putchar(fizz[j]);
-			}
+			printf("Fizz");
 		}
 		else if (i % 5 == 0)
 		{
-			for (k = 0; k < 5; k++)
-			{
-				_putchar(buzz[k]);
-			}
+			printf("Buzz");
 		}
 		else
 		{
-			if (i > 10)
-			{
-			_putchar('0' + i / 10);
-			}
-			_putchar('0' + i % 10);
+			printf("%d", i);
+		}
+		if (i < 100)
+		{
+			printf(" ");
+		}
+		else
+		{
+			printf("\n");
 		}
 	}
-	_putchar('\n');
+	return (0);
 }
