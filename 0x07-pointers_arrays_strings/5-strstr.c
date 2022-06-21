@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+	* _strstr - returns character on the first occurence
+	* @haystack: string to look a character for
+	* @needle: character we're looking for
+	*
+	* Return: returns char
+	*/
 
 char *_strstr(char *haystack, char *needle)
 {
