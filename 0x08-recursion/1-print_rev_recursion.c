@@ -1,10 +1,17 @@
 #include "main.h"
 
 /**
-	* _puts_recursion - prints characters
+	* _print_rev_recursion - prints characters in reverse
 	* @s: character to be printed
 	*
 	* Return: returns nothing
 	*/
 
-void _print_re
+void _print_rev_recursion(char *s)
+{
+	if (*s)
+	{
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
+	}
+}
