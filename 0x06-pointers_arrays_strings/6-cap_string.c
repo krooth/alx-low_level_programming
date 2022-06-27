@@ -10,15 +10,16 @@
 char *cap_string(char *str)
 {
 	int i, j;
-	char sep[] = ",;.!?\"(){}";
+	char sep[] = {',', ';', '.', '!', '?', '\"', '(', ')', '{', '}', ' ', '\t', '\n'};
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; str[j] != '\0' && i < 13; j++)
+		for (j = 0; sep[j] != '\0'; j++)
 		{
-			if (str[i - 1] == sep[j])
+			if (str[i] == sep[j])
 			{
-				str[i] -= 32;
+				if (str[i + 1] >= 97 && str[i + 1] <= 122 && str[i + 1] != '\0')
+					str[i + 1] -= 32;
 			}
 		}
 	}
