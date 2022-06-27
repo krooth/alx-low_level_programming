@@ -1,22 +1,28 @@
 #include "main.h"
 
 /**
-	* *rot13 - rotate letter
+	* *rot13 - rotate a character by 13 for alphabets
 	* @str: char parameter
 	*
-	* Return: returns character with leet encryption
+	* Return: returns character which is rotated by 13
 	*/
 
 char *rot13(char *str)
 {
-	int i;
+	char check[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if ((str[i] >= 65 && str[i] <= 77) || (str[i] >= 97 && str[i] <= 109))
-			str[i] += 13;
-		else if ((str[i] >= 78 && str[i] <= 90) || (str[i] >= 109 && str[i] <= 122))
-			str[i] -= 13;
+		for (j = 0; j < 52; j++)
+		{
+			if (str[i] == check[j])
+			{
+				str[i] = rot[j];
+				break;
+			}
+		}
 	}
 	return (str);
 }
