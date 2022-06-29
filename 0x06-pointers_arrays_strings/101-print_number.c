@@ -9,13 +9,33 @@
 
 void print_number(int n)
 {
-    int num;
+	int temp = n / 10, base = 1, no_of_digits = 1, i, num;
 
-    while (n != 0)
-    {
-        num = n % 10;
-        n /= 10;
-        _putchar(num);
-    }
-    _putchar('\n');
+	if (n < 0)
+	{
+		n = -n;
+		_putchar('-');
+	}
+	if (n == 0)
+		no_of_digits = 1;
+	
+	else
+	{
+		while (temp != 0)
+		{
+			no_of_digits++;
+			temp /= 10;
+		}
+	}
+	for (i = 1; i < no_of_digits; i++)
+	{
+		base *= 10;
+	}
+	temp = n;
+	for (i = 1; i <= no_of_digits; i++)
+	{
+		num = (temp / base) % 10;
+		_putchar('0' + num);
+		base /= 10;
+	}
 }
