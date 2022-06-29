@@ -2,7 +2,7 @@
 
 /**
 	* print_number - prints nmbers
-	* @n: integer parameter	
+	* @n: integer parameter
 	*
 	* Return: returns nothing
 	*/
@@ -19,7 +19,7 @@ void print_number(int n)
 		_putchar('-');
 	}
 	if (n == 0)
-		no_of_digits = 1;	
+		no_of_digits = 1;
 	else
 	{
 		while (temp != 0)
