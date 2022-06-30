@@ -20,7 +20,7 @@ int _prime_num(int n, int i)
 }
 
 /**
-	* _is_prime_number - identifies prime numbers
+	* is_prime_number - identifies prime numbers
 	* @n: integer arguement to be checked if prime or not
 	*
 	* Return: returns integer
