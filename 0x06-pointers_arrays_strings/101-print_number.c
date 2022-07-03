@@ -19,7 +19,7 @@ void print_number(int n)
 		_putchar('-');
 	}
 	if (n == 0)
-		no_of_digits = 1;
+		no_of_digits = 1;__CLANG_ATOMIC_CHAR_LOCK_FREE
 	else
 	{
 		while (temp != 0)
