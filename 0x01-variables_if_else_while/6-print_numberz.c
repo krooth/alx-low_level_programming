@@ -12,11 +12,11 @@
 
 int main(void)
 {
-	char i = 48;
+	int i = 0;
 
-	for (i = 48; i < 58; ++i)
+	for (i = 0; i < 10; ++i)
 	{
-		putchar(i);
+		putchar(i + '0');
 	}
 	putchar('\n');
 	return (0);
