@@ -12,6 +12,6 @@ void print_numbers(void)
 	for (i = 48; i < 59; i++)
 	{
 		_putchar(i);
-		_putchar('\0');
 	}
+		_putchar('\n');
 }
